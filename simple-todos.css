@@ -1,0 +1,99 @@
+/* CSS declarations go here */
+*{
+	list-style: none;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #16a085;
+	background-attachment: fixed;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: 14px;
+}
+h1 {
+		color: #F9F9F9;
+}
+li{
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+ul{
+	padding: 5px;
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: #1abc9c;
+}
+
+header {
+    background: linear-gradient(to bottom, #1DCAA8 0%,#1ABC9C 100%);
+	padding: 20px 15px 15px 15px;
+	position: relative;
+}
+/* DEFININDO DIV ONDE SE EXIBE AS MENSAGENS */
+.mensagens{
+	max-height: 400px;
+	height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+/*DEFININDO ESTÉTICA DAS MENSAGENS*/
+.usuario{
+	font-size: 12px;
+	font-weight: bold;
+}
+.mensagem{
+	font-size: 14px;
+	color: #fff;
+}
+.horario{
+	font-size: 9px;
+	color: #DADADA;
+	float: right;
+	margin-right: 5px;
+}
+/* ESTILO DO INPUT */
+.insere-mensagens{
+	width: 565px;
+	margin: 10px -3px -10px 5px;
+	padding: 10px 10px;
+	background: transparent;
+	border: 1px solid #ccc;
+	font-size: 18px;
+}
+/* BALÃO DA MENSAGEM */
+.balao:before {
+    content: '';
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #16A085;
+    width: 10px;
+    position: absolute;
+    left: -20px;
+}
+.balao{
+	position: relative;
+	padding: 15px;
+	margin: 2px;
+	color: #FFF;
+	background: #40A08D;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border: 1px solid #16A085;
+}

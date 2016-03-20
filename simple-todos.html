@@ -1,0 +1,39 @@
+<head>
+	<title>Hue Chat</title>
+</head>
+ 
+<body>
+	<div class="container">
+		<header>
+			<h1>Grupo Alfa</h1>
+ 
+			{{> loginButtons}}
+		
+		</header>
+		{{#if currentUser}}
+			<div id="mensagens" class="mensagens">
+				<ul id="canvas">
+					{{#each mensagens}}
+						{{> msgs}}
+					{{/each}}
+				</ul>
+			</div>
+		{{/if}}
+				{{#if currentUser}}
+			<button class="limpar-chat">Limpar Chat</button>
+		
+			<form class="enviar-mensagem">
+				<input class="insere-mensagens" type="text" name="msg" placeholder="Digite uma mensagem" autocomplete="off"/>
+			</form>
+		{{/if}}
+	</div>
+</body>
+ <template name="msgs">
+	<li class="estruturaMensagem">
+ 		<span class="usuario">{{username}}:</span>
+ 		<p class="balao">
+	 		<span class="mensagem">{{text}}</span>
+	 		<span class="horario">{{createdAt}}</span>
+	 	</p>
+	</li>
+</template>
